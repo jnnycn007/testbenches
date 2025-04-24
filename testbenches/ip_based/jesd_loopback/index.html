@@ -154,7 +154,7 @@ Content on this topic
 <li class="toctree-l2"><a class="reference internal" href="../../../user_guide/git_repository.html">Git repository</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../../../user_guide/releases.html">Releases</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../../../user_guide/build_tb.html">Build a testbench</a></li>
-<li class="toctree-l2"><a class="reference internal" href="../../../user_guide/architecture.html">Testbenches architecture</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../../user_guide/hierarchy.html">Repository hierarchy</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../../../user_guide/create_edit_tb.html">Creation and editing of HDL testbenches</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../../../user_guide/coding_guidelines.html">Testbenches coding guidelines</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../../../user_guide/docs_guidelines.html">Documentation guidelines</a></li>
@@ -605,6 +605,10 @@ in the following example:</p>
 <section id="stop-the-environment">
 <h3>Stop the environment<a class="headerlink" href="#stop-the-environment" title="Link to this heading"></a></h3>
 <ul class="simple">
+<li><p>Simulation waits for the stop condition, depending on the packet generation
+mode</p></li>
+<li><p>Stop the watchdog</p></li>
+<li><p>Stop the clocks</p></li>
 <li><p>Finish the simulation</p></li>
 </ul>
 </section>
